@@ -10,6 +10,14 @@ Different electrical quantities and some sub-metering values are available. The 
 
 In technical terms, this is a regession problem. `Global_active_power variable` is the only feature that we are interested in. Timeseries forecasting of the `Global_active_power variable` can be performed by reformulating the problem into a supervised learning problem. For example, using first **1-29** values of `Global_active_power variable` as features **(X)** to predict **30th** value (i.e. target **(y)**).
 
+##### Jupyter notebook `TimeseriesEDA-forecasting-model-comparision.ipynb` contains
+
+* Exploratory Data analysis (EDA) of timeseries fluctuations of  `Global_active_power variable` in various timeperiods.
+* Statistical test to check normality of the data.
+* Statistical test to check whether timeseries is stationary.
+* Timeseries forecasting of `Global_active_power variable` with Recurrent Neural Networks (LSTM,GRU models) (see picture below).   
+
+
 ![Distribution and forecasting](./pictures/title.png)
 
 Model specification are : 
